@@ -144,15 +144,6 @@ namespace SnakeGame
             }
             else
             {
-                //if (Input.KeyPressed(Keys.Right) && Config.direcao != Direcao.Left)
-                //    Config.direcao = Direcao.Right;
-                //else if (Input.KeyPressed(Keys.Left) && Config.direcao != Direcao.Right)
-                //    Config.direcao = Direcao.Left;
-                //else if(Input.KeyPressed(Keys.Up) && Config.direcao != Direcao.Down)
-                //    Config.direcao = Direcao.Up;
-                //else if(Input.KeyPressed(Keys.Down) && Config.direcao != Direcao.Up)
-                //    Config.direcao = Direcao.Down;
-
                 timer1.Interval = Convert.ToInt32(150 / Config.velocidade);
                 MovePlayer();
                 pictureBox1.Invalidate();
@@ -177,10 +168,6 @@ namespace SnakeGame
                     {
                         foodColor = Brushes.Yellow;
                     }
-                    //if (i != 0 & (i == 1 | i % 6 == 0))
-                    //{ 
-                    //    snakeColor = Brushes.Black;
-                    //}
 
 
                     if (i == 0)
@@ -314,13 +301,5 @@ namespace SnakeGame
             Config.GameOver = true;
             button1.Visible = true;
         }
-
-        //private void Form1_Resize(object sender, EventArgs e)
-        //{
-        //    pictureBox1.Size = new Size(this.Size.Width - 30, this.Size.Height - 50);
-
-        //    label1.Location = new Point((this.Size.Width / 2) - 83, 18);
-        //    label2.Location = new Point((this.Size.Width / 2) - 225, (this.Size.Height / 2) - 90);
-        //}
     }
 }
